@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
   import {historyCache} from "./lib/cache"
   import http from "./lib/http"
 
@@ -18,9 +18,9 @@
       }
     },
     created() {
-      http("smarthos.system.area.list", {}).then((res) => {
-        console.log("111", res);
-      });
+//      http("smarthos.system.area.list", {}).then((res) => {
+//        console.log("111", res);
+//      });
     },
     watch: {
       $route(to, from) {
@@ -80,7 +80,7 @@
   }
 
   #app, .page {
-    position: fixed;
+    position: absolute;
     @include t_r_b_l();
   }
 </style>
