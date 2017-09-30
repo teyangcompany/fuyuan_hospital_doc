@@ -59,7 +59,7 @@
                 /*text-align: center;*/
                 flex: 0 0 auto;
                 width: 25%;
-
+                text-align: center;
                 $iconWid: 25px;
                 .icon {
                     display: inline-block;
